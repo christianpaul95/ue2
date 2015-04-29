@@ -18,7 +18,7 @@ public class Saeugetier
         this.geschlecht = Geschlecht;
     }
     
-    public String printAll()  //JULLIAANN?? bedeutung??
+    public String printAll()  //voellig unnoetig..
     {
         return name + alter + geschlecht;
     }

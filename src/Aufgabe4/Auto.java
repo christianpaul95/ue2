@@ -23,6 +23,7 @@ public class Auto extends Fahrzeug //vererbung
         super(Reifen, PS, Tueren);
         this.Klimaanlage = false; //JUULIAANN
         this.Airbags = Airbags;
+        this.Farbe = colour.blue; //hier setz ich die standard farbe fest
         
     }
 

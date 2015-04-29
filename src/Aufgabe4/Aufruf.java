@@ -28,7 +28,7 @@ public class Aufruf
         {
             System.out.println(a.getPS()); //soll fuer jedes Auto (a) die PS ausgeben
         }
-               
+
     }
         
 }

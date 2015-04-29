@@ -6,7 +6,7 @@ public class Fahrzeug implements Comparable //JULLIAANANN
     private short Reifen;
     private String Farbe;
     private short PS;       
-    private short Tueren;
+    private short Tueren; 
     private boolean Gestartet;
     private short Geschwindigkeit;
     public static int Anzahl; //JULLIAANN
@@ -24,7 +24,7 @@ public class Fahrzeug implements Comparable //JULLIAANANN
     public Fahrzeug(short Reifen, short PS, short Tueren) //konstruktor
     {
         this.Reifen = Reifen;
-        this.Farbe = Farbe;
+        //this.Farbe = Farbe;
         this.PS = PS;
         this.Tueren = Tueren;
         this.Gestartet = false;
@@ -125,7 +125,7 @@ public class Fahrzeug implements Comparable //JULLIAANANN
         {
             return -1;
         }
-        else if(this.getPS() == f.getPS())  //JULLIAANN!
+        else if(this.getPS() == f.getPS())  //JULLIAANN! wieso auch final?
         {
             return 0;
         }
