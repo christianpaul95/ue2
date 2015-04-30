@@ -1,7 +1,7 @@
 package Aufgabe4;
 
 
-public class Fahrzeug implements Comparable //JULLIAANANN
+public class Fahrzeug implements Comparable //benutzt comparable
 {
     private short Reifen;
     private String Farbe;
@@ -9,7 +9,7 @@ public class Fahrzeug implements Comparable //JULLIAANANN
     private short Tueren; 
     private boolean Gestartet;
     private short Geschwindigkeit;
-    public static int Anzahl; //JULLIAANN
+    public static int Anzahl; 
     
     void starten()
     {
@@ -117,21 +117,21 @@ public class Fahrzeug implements Comparable //JULLIAANANN
       
     }
 
-    @Override
+    @Override                      //object o ist die liste der autos, also alle autos werden compared!
     public int compareTo(Object o) //da darf man kein Fahrzeug f reinschreiben, dann wuerde man es nicht mehr ueberschreiben, und dann isses kein compareTo mehr
-    {
-        final Fahrzeug f = (Fahrzeug) o; //das o ist jetz ein Fahzeug und heisst f //casting
-        if(this.getPS() > f.getPS())
+    {                              //compareTo weiss in welche reihenfolge das hier gehoert
+        Fahrzeug f = (Fahrzeug) o; //das o ist jetz ein Fahzeug und heisst f //casting, datentyp aendern
+        if(this.getPS() > f.getPS()) //vergleicht 2 autos
         {
-            return -1;
+            return 1; // bedeutet das des 2. auto auto mehr PS hat
         }
-        else if(this.getPS() == f.getPS())  //JULLIAANN! wieso auch final?
+        else if(this.getPS() == f.getPS())
         {
-            return 0;
+            return 0; //wenn die autos gleich viel PS haben aendert sich nix an die positionen
         }
         else
         {
-            return 1;
+            return 1; //andererfalls wird auto 1 um eine position hoch geschoben
         }
     }
     

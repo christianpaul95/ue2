@@ -9,7 +9,7 @@ public class Auto extends Fahrzeug //vererbung
     
     public enum colour //enum
     {
-        silver, red, black, blue, white; //JUULIAANNN????
+        silver, red, black, blue, white; //wertebereich von colour
     }
 
     @Override
@@ -21,7 +21,7 @@ public class Auto extends Fahrzeug //vererbung
     public Auto(short Airbags, short Reifen, colour Farbe, short PS, short Tueren) //konstruktor
     {
         super(Reifen, PS, Tueren);
-        this.Klimaanlage = false; //JUULIAANN
+        Klimaanlage = false;
         this.Airbags = Airbags;
         this.Farbe = colour.blue; //hier setz ich die standard farbe fest
         
@@ -57,7 +57,7 @@ public class Auto extends Fahrzeug //vererbung
         this.Airbags = Airbags;
     }
     
-    void KlimaanlageAn()   //JUULIIAANN
+    void KlimaanlageAn()  
     {
         if(this.Klimaanlage = true)
         {

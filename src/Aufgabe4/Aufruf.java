@@ -23,7 +23,7 @@ public class Aufruf
         liste.add(nissan);
         liste.add(porsche);
         
-        Collections.sort(liste); //JUULIIANN??
+        Collections.sort(liste);
         for(Auto a : liste) //for each schleife, also fuer jedes Auto a in der liste
         {
             System.out.println(a.getPS()); //soll fuer jedes Auto (a) die PS ausgeben

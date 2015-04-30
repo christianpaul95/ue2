@@ -13,7 +13,7 @@ public class Mensch extends Saeugetier //extends bedeutet vererbung, mensch erbt
     public Mensch(String name, int alter, String Geschlecht) //konstruktor
     {
         super(name, alter, Geschlecht); //zugriff auf elemente der basisklasse, praefix benoetigt so dass er zugreifen kann
-    }
+    }                                   //super = uebergabe vom konstruktor vom saeugetier, dass ers mitnimmt
 
     @Override
     public String toString() //toStringmethode fuers ausgeben

@@ -13,8 +13,8 @@ public class Saeugetier
 
     public Saeugetier(String name, int alter, String Geschlecht) 
     {
-        this.name = name; //JUUULIAAN?? this. ????
-        this.alter = alter;
+        this.name = name; 
+        this.alter = alter; //muss man machen, dass der computer den unterschied weis
         this.geschlecht = Geschlecht;
     }
     
